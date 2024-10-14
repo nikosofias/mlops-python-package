@@ -40,6 +40,7 @@ pynvml = "^11.5.0"
 setuptools = "^71.1.0"
 scikit-learn = "1.4.2"
 shap = "^0.46.0"
+pyobjus = "^1.2.3"
 
 [tool.poetry.group.checks.dependencies]
 bandit = "^1.7.9"
