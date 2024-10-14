@@ -32,7 +32,7 @@ class ExplanationsJob(base.Job):
     models_explanations: datasets.WriterKind = pdt.Field(..., discriminator="KIND")
     samples_explanations: datasets.WriterKind = pdt.Field(..., discriminator="KIND")
     # Model
-    alias_or_version: str | int = "Champion"
+    alias_or_version: str | int = 1 #"Champion"
     # Loader
     loader: registries.LoaderKind = pdt.Field(registries.CustomLoader(), discriminator="KIND")
 

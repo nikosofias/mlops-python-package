@@ -41,7 +41,7 @@ class EvaluationsJob(base.Job):
     targets: datasets.ReaderKind = pdt.Field(..., discriminator="KIND")
     # Model
     model_type: str = "regressor"
-    alias_or_version: str | int = "Champion"
+    alias_or_version: str | int = 1 #"Champion"
     # Metrics
     metrics: list[metrics_.MetricKind] = pdt.Field([metrics_.SklearnMetric()], discriminator="KIND")
     # Evaluators

@@ -22,7 +22,7 @@ class PromotionJob(base.Job):
     KIND: T.Literal["PromotionJob"] = "PromotionJob"
 
     alias: str = "Champion"
-    version: int | None = None
+    version: int | None = 1 #None
 
     @T.override
     def run(self) -> base.Locals:
